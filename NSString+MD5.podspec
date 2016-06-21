@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint NSString-MD5.podspec' to ensure this is a
+#  Be sure to run `pod spec lint NSString+MD5.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "NSString-MD5"
+  s.name         = "NSString+MD5"
   s.version      = "0.0.1"
   s.summary      = "MD5简单加密"
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                 MD5简单加密
                 将明文字符串加密成密文
-                不可逆，只能加密，不能解密
+                加密不可逆，只能加密，不能解密
                    DESC
 
   s.homepage     = "https://github.com/864764448/NSString-MD5"
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "NSString-MD5/NSString+MD5.{h,m}"
+  s.source_files  = "NSString+MD5/NSString+MD5.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
